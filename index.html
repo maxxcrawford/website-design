@@ -20,7 +20,7 @@
 			}
 
 			body {
-        background: #B8B8B8;
+        background: #DDD;
 				font-family: 'Roboto Slab',
 				serif;
         font-size: 16px;
@@ -32,12 +32,13 @@
 				font-family: 'BioRhyme Expanded',
 				serif;
         display: block;
-        /* border-bottom: 1px solid #333;
-        padding: 0 0 8px;
-        margin: 0 0 24px; */
 			}
-      a {
+      main a {
         color: #E4503E;
+        transition: color 0.2s ease-out;
+      }
+      main a:hover {
+        color: #333;
       }
       h2 {
         display: block;
@@ -47,6 +48,11 @@
         text-transform: uppercase;
         padding: 0;
         margin: 0;
+        line-height: 1.2em;
+      }
+      h2 span {
+        display: inline-block;
+        word-wrap: nowrap;
       }
       .wrapper {
         max-width: 960px;
@@ -57,7 +63,8 @@
         background: #FFF;
         min-height: 500px;
         margin: 0;
-        padding: 0;
+        padding: 2em 0;
+        display: block;
       }
       header {
         margin: 0;
@@ -67,10 +74,44 @@
       }
       footer {
         padding-top: 2em;
-        background: #B8B8B8;
+        background: #DDD;
       }
-      section.wrapper {
-        padding-top: 2em;
+      section {
+        border-bottom: 1px solid #DDD;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+      }
+      section:last-child {
+        border-bottom: none;
+      }
+      .btn {
+        display: inline-block;
+        background: #E4503E;
+        color: #FFF;
+        text-decoration: none;
+        padding: 8px;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+        width: 100%;
+        text-align: center;
+        transition: background 0.2s ease-out;
+      }
+      .btn:hover {
+        background: #333;
+      }
+      .btn i {
+        margin-right: 4px;
+      }
+      cite {
+        opacity: 0.5;
+      }
+      @media all and (min-width: 600px){
+        .btn {
+          width: auto;
+          padding: 8px 24px;
+          margin: 0 8px 8px 0;
+        }
       }
 		</style>
 	</head>
@@ -84,33 +125,63 @@
       </div>
     </header>
     <main>
-      <section class="wrapper">
-        <h2>Lesson 1: January 8, 2018</h2>
-        <ul>
-          <li>
-            <a href="docs/ART3113-WebSiteDesign-Syllabus.pdf" target="_blank">Syllabus</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://goo.gl/forms/m6mXy9gJPScVumsY2">Benchmark Survey</a>
-          </li>
-          <li>
-            <a href="#" target="_blank">Assignment</a>
-          </li>
-        </ul>
-      </section>
+      <div class="wrapper">
+        <section>
+          <h2>Lesson 1: <span>January 8, 2018</span></h2>
+          <ul>
+            <li>
+              <a href="docs/ART3113-WebSiteDesign-Syllabus.pdf" target="_blank">Syllabus</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://goo.gl/forms/m6mXy9gJPScVumsY2">Benchmark Survey</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Assignment</a>
+            </li>
+          </ul>
+        </section>
+        <!-- <section>
+          <h2>Lesson 1: <span>January 8, 2018</span></h2>
+          <ul>
+            <li>
+              <a href="docs/ART3113-WebSiteDesign-Syllabus.pdf" target="_blank">Syllabus</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://goo.gl/forms/m6mXy9gJPScVumsY2">Benchmark Survey</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Assignment</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Lesson 1: <span>January 8, 2018</span></h2>
+          <ul>
+            <li>
+              <a href="docs/ART3113-WebSiteDesign-Syllabus.pdf" target="_blank">Syllabus</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://goo.gl/forms/m6mXy9gJPScVumsY2">Benchmark Survey</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Assignment</a>
+            </li>
+          </ul>
+        </section> -->
+      </div>
     </main>
     <footer>
       <div class="wrapper">
-        <h2>CONTACT</h2>
-        <p>Maxx Crawford</p>
-        <ul>
-          <li>
-            <a href="mailto:maxx-crawford@utulsa.edu"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a>
-          </li>
-          <li>
-            <a href="tel:4792086299"><i class="fa  fa-mobile" aria-hidden="true"></i> Phone/Text</a>
-          </li>
-        </ul>
+        <h2>CONTACT:<br/>
+          Maxx&nbsp;Crawford</h2>
+        <p>
+          <a class="btn" href="mailto:maxx-crawford@utulsa.edu"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a>
+          <a class="btn" href="tel:4792086299"><i class="fa  fa-mobile" aria-hidden="true"></i> Phone/Text</a>
+          <a class="btn" target="_blank" href="http://maxxcrawford.com"><i class="fa fa-mouse-pointer" aria-hidden="true"></i> Website</a>
+        </p>
+        <cite>
+          &copy; 2018 Maxx Crawford. All&nbsp;rights&nbsp;reserved.
+        </cite>
       </div>
     </footer>
 
