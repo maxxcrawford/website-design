@@ -20,6 +20,7 @@
 			}
 
 			body {
+        background: #B8B8B8;
 				font-family: 'Roboto Slab',
 				serif;
         font-size: 16px;
@@ -30,25 +31,46 @@
 			h1 {
 				font-family: 'BioRhyme Expanded',
 				serif;
+        display: block;
         /* border-bottom: 1px solid #333;
         padding: 0 0 8px;
         margin: 0 0 24px; */
 			}
+      a {
+        color: #E4503E;
+      }
       h2 {
+        display: block;
         font-family: 'Oswald', sans-serif;
         font-weight: normal;
         letter-spacing: 1px;
         text-transform: uppercase;
+        padding: 0;
+        margin: 0;
       }
-      main, .wrapper {
+      .wrapper {
         max-width: 960px;
         margin: 0 auto;
         padding: 0 2em;
       }
+      main {
+        background: #FFF;
+        min-height: 500px;
+        margin: 0;
+        padding: 0;
+      }
       header {
+        margin: 0;
         padding: 2em 0;
         background: #E4503E;
         color: #FFF;
+      }
+      footer {
+        padding-top: 2em;
+        background: #B8B8B8;
+      }
+      section.wrapper {
+        padding-top: 2em;
       }
 		</style>
 	</head>
@@ -62,19 +84,37 @@
       </div>
     </header>
     <main>
-      <h1>Lesson 1: January 8, 2018</h1>
-      <ul>
-        <li>
-          <a href="docs/syllabus.pdf" target="_blank">Syllabus</a>
-        </li>
-        <li>
-          <a href="#">Survey</a>
-        </li>
-        <li>
-          <a href="docs/l01-assignment.pdf" target="_blank">Assignment</a>
-        </li>
-      </ul>
+      <section class="wrapper">
+        <h2>Lesson 1: January 8, 2018</h2>
+        <ul>
+          <li>
+            <a href="docs/ART3113-WebSiteDesign-Syllabus.pdf" target="_blank">Syllabus</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://goo.gl/forms/m6mXy9gJPScVumsY2">Benchmark Survey</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Assignment</a>
+          </li>
+        </ul>
+      </section>
     </main>
-	</body>
+    <footer>
+      <div class="wrapper">
+        <h2>CONTACT</h2>
+        <p>Maxx Crawford</p>
+        <ul>
+          <li>
+            <a href="mailto:maxx-crawford@utulsa.edu"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a>
+          </li>
+          <li>
+            <a href="tel:4792086299"><i class="fa  fa-mobile" aria-hidden="true"></i> Phone/Text</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
+    <script src="https://use.fontawesome.com/a17763c8d3.js"></script>
+
+	</body>
 </html>
